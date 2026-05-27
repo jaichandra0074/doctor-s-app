@@ -1,0 +1,125 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+}
+
+.nav-links{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+section div{
+  width: 45%;
+}
+
+section h1{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+section p{
+  font-size: 18px;
+}
+
+section img{
+  width: 100%;
+}
+
+.doctorcard{
+    width: 220px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.doctorcard img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.doctorcard h1{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.doctorcard div{
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.doctorcard p{
+    margin-bottom: 15px;
+}
+
+.doctorcard button{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.doctorcard button:hover{
+    background-color: darkblue;
+    width:100%;
+    padding:10px;
+    margin: auto;
+}
+.doctorcontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+form{
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+input,
+select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkblue;
+}
