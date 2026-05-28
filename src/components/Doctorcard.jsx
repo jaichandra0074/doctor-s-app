@@ -1,6 +1,7 @@
 
+import { Navigate } from 'react-router-dom'
 import './styles.css'
-function Doctorcard({name,specialization,gender}) {
+function Doctorcard({name,specialization,gender,id}) {
   return (
     <div className='doctorcard'>
         <div>
@@ -9,7 +10,7 @@ function Doctorcard({name,specialization,gender}) {
         <h1>{name}</h1>
         <div>{specialization}</div>
         <p>{gender}</p>
-        <button>View more</button>
+        <button onClick={()=>Navigate('/doctor/${id}')}>View more</button>
     </div>
   )
 }

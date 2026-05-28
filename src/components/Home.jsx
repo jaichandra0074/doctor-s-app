@@ -68,14 +68,14 @@ function Home({newdoctor}) {
 
     <select name="" id="" value={specialization}
     onChange={(e)=>setSpecialization(e.target.value)}>
-        <option value="Muslces">muscles</option>
+        <option value="Muscles">muscles</option>
         <option value="Heart">heart</option>
         <option value="Bones">bones</option>
     </select>
     </div>
      <div  className='doctorcontainer'>
         {filterdata.length>0?filterdata.map((val)=>(
-            <Doctorcard key={val.id} name={val.name} gender={val.gender} specialization={val.specialization}/>
+            <Doctorcard id={val.id} key={val.id} name={val.name} gender={val.gender} specialization={val.specialization}/>
         )): <h2>no doctors found</h2>}
     </div>
    </div>
